@@ -1,38 +1,26 @@
-# create-svelte
+# APIE Code Set-up
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Hello there, this is a short description on how to use Connector Cards
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
-
+## Installing Dependencies
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+npm i -D svelte-fa
+npm i @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+## Getting Code
 ```bash
-npm run dev
+# assuming you are in root of the project
+# type defination is available in the folder src/lib/components/connector-cardstypes.d.ts
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+cp -r src/lib/components/connector-cards /path/to/destination
 ```
 
-## Building
+## Usage
 
-To create a production version of your app:
+You may refer src/routes/+page.svelte
 
-```bash
-npm run build
-```
+## Demo
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[View Demo](https://apie-ai.netlify.app)
