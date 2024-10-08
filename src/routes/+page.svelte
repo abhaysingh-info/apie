@@ -32,6 +32,10 @@
 			title: "Microsoft",
 			image: "/images/microsoft.png"
 		},
+		{
+			title: "Analytics",
+			image: "/images/analytics.svg"
+		},
 	]
 
 </script>
