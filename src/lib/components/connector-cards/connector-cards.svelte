@@ -2,10 +2,12 @@
 	import type { IConnectors } from './types';
 	import Fa from 'svelte-fa';
 
+	export let className = '';
+
 	export let connector: IConnectors;
 </script>
 
-<div class="group relative rounded-lg md:rounded-xl lg:rounded-2xl cursor-pointer border-2 hover:border-indigo-900 shadow max-w-[26rem] max-h-[26rem] min-h-full">
+<div class="group relative rounded-lg md:rounded-xl lg:rounded-2xl cursor-pointer border-2 hover:border-indigo-900 shadow max-w-[26rem] max-h-[26rem] min-h-full {className} ">
 	<div class="w-full flex flex-col justify-between rounded-lg md:rounded-xl lg:rounded-2xl cursor-pointer">
 		<div class="p-6 flex items-center justify-center bg-gray-50 rounded-lg md:rounded-xl lg:rounded-2xl">
 			{#if connector.icon}
