@@ -5,4 +5,5 @@ export interface IConnectors {
 	iconColor?: string,
 	image?: string,
 	title: string,
+	url: string,
 }
