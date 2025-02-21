@@ -3199,7 +3199,12 @@ export async function getAllTickets() {
     ]
 }
 
-export async function getTicketChatById(id: number) {
+export async function getInitialMessageById(id: string) {
+    const d = (await getAllTickets()).find(ticket => ticket.SortProfile === id);
+    return d;
+}
+
+export async function getTicketChatById(id: string) {
     return [
         {
             "UserProfile": "replyticket#40cdacdf-67c1-4aac-aaf3-c27c3a852be3",
@@ -3209,7 +3214,8 @@ export async function getTicketChatById(id: number) {
             "subject": "Re: [Ticket ##7178] Your Support Request at apilabs.ai",
             "org_subject": "",
             "category": "",
-            "description": "thanks for your email",
+            "description": `Thank you for reaching out to us. We have received your email and appreciate your inquiry. Our support team will review your request and get back to you as soon as possible with a resolution or further guidance. Please let us know if you need any additional assistance in the meantime.
+            Thank you for reaching out to us.We have received your email and appreciate your inquiry.Our support team will review your request and get back to you as soon as possible with a resolution or further guidance.Please let us know if you need any additional assistance in the meantime.Thank you for reaching out to us.We have received your email and appreciate your inquiry.Our support team will review your request and get back to you as soon as possible with a resolution or further guidance.Please let us know if you need any additional assistance in the meantime.Thank you for reaching out to us.We have received your email and appreciate your inquiry.Our support team will review your request and get back to you as soon as possible with a resolution or further guidance.Please let us know if you need any additional assistance in the meantime.`,
             "status": "",
             "archived": "",
             "domain": "",
@@ -3226,7 +3232,7 @@ export async function getTicketChatById(id: number) {
             "subject": "Re: [Ticket ##7178] Your Support Request at apilabs.ai",
             "org_subject": "",
             "category": "",
-            "description": "i will fol;low up",
+            "description": "Thank you for your response. I will follow up on this matter and provide you with an update shortly. If you have any additional information or further questions, please feel free to reach out, and I will do my best to assist you.",
             "status": "",
             "archived": "",
             "domain": "",

@@ -1,27 +1,23 @@
 export interface IHelpdeskRowProps {
-    id: number;
-    domain: string;
-    category: string;
-    lastUpdated: Date;
-    originDate: Date;
-    email: string;
-    subject: string;
-    status: string;
-    messageCount: number;
+    UserProfile: string
+    "SortProfile": string
+    "requester_email": string
+    "msg_cnt": number
+    "subject": string
+    "org_subject": string
+    "category": string
+    "description": string
+    "status": string
+    "archived": string
+    "domain": string
+    "domain_authcode": string
+    "UserName": string
+    "created_at": number,
+    "updated_at": number
 }
 
 
 export interface IHelpdeskThreadsProps extends IHelpdeskRowProps {
-    messageHistory: IHelpdeskMessageHistory[]
+    messageHistory: IHelpdeskRowProps[]
 }
 
-export interface IHelpdeskMessageHistory {
-    id: number;
-    message: string;
-    date: Date;
-    from: string;
-    to: string;
-    status: string;
-    isRead: boolean;
-    isEmployee?: boolean;
-}

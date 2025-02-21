@@ -14,28 +14,30 @@
 	on:click={onTicketClick}
 	class="grid w-full cursor-pointer grid-cols-12 items-center border px-1 py-3"
 >
-	<div class="col-span-3 flex items-center gap-2 pl-4">
+	<div class="col-span-2 flex items-center gap-2 pl-4">
 		<div>
 			<input type="checkbox" checked={isChecked} class="form-checkbox h-5 w-5 text-blue-600" />
 		</div>
 		<div class="font-semibold">
-			<a href={ticketBaseURL + '/' + props.id} class="cursor-pointer">#{props.id}</a>
+			<a href={ticketBaseURL + '/' + props.UserProfile} class="cursor-pointer"
+				>#{props.UserProfile}</a
+			>
 		</div>
 		-
 		<div class="font-bold uppercase">
 			{props.domain}
 		</div>
 	</div>
-	<div class="col-span-7 flex items-center gap-2">
+	<div class="col-span-8 flex items-center gap-2">
 		<div>
-			[<span class="">{props.category}</span>]
+			[<span class="">{props.category || 'Uncategorized'}</span>]
 		</div>
 		-
-		<div class="font-semibold">
-			{props.email}
+		<div class="break-all font-semibold">
+			{props.requester_email}
 		</div>
 		-
-		<div>
+		<div class="break-all">
 			{props.subject}
 		</div>
 		-
@@ -45,14 +47,14 @@
 		<div
 			class="flex h-6 w-5 items-center justify-center gap-2 rounded-full bg-neutral-500 text-xs text-neutral-100"
 		>
-			{props.messageCount}
+			{props.msg_cnt}
 		</div>
 	</div>
 	<div class="col-span-2">
 		<div class="font-medium">
-			<span class="">{new Date(props.lastUpdated).toLocaleString()}</span>
+			<span class="">{new Date(props.updated_at * 1000).toLocaleString()}</span>
 			|
-			{new Date(props.originDate).toLocaleDateString()}
+			{new Date(props.created_at * 1000).toLocaleDateString()}
 		</div>
 	</div>
 </div>
