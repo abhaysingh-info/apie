@@ -3,7 +3,7 @@
 	import type { IHelpdeskRowProps } from '$lib/components/helpdesk';
 	import HelpdeskRow from '$lib/components/helpdesk/helpdesk-row.svelte';
 
-	export let helpdeskData: IHelpdeskRowProps[] = [
+	const helpdeskData: IHelpdeskRowProps[] = [
 		{
 			id: 1,
 			domain: 'example.com',

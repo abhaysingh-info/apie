@@ -12,10 +12,10 @@ export interface IHelpdeskRowProps {
 
 
 export interface IHelpdeskThreadsProps extends IHelpdeskRowProps {
-    messageHisory: IHelpdeskMessageHistry[]
+    messageHistory: IHelpdeskMessageHistory[]
 }
 
-export interface IHelpdeskMessageHistry {
+export interface IHelpdeskMessageHistory {
     id: number;
     message: string;
     date: Date;
@@ -23,4 +23,5 @@ export interface IHelpdeskMessageHistry {
     to: string;
     status: string;
     isRead: boolean;
+    isEmployee?: boolean;
 }
