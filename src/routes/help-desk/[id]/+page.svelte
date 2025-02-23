@@ -34,23 +34,27 @@
 <section class="py-6">
 	{#if data}
 		<div class="grid grid-cols-12">
-			<div class="col-span-[0] md:col-span-1"></div>
-			<div class="col-span-11 flex justify-between text-2xl md:col-span-10 lg:text-3xl">
-				<div class="flex flex-row gap-4">
-					<div>
-						<button
-							class="text-blue flex items-center gap-2 rounded-full border border-blue-500 px-2 py-2 text-lg text-blue-500 hover:bg-blue-500 hover:text-white"
-							on:click={goBack}
-						>
-							<Fa icon={faArrowLeft} />
-						</button>
-					</div>
-					<div class="flex flex-wrap gap-2 text-wrap">
+			<div class=""></div>
+			<div
+				class="col-span-12 flex flex-wrap justify-between gap-4 pl-4 text-2xl md:col-span-10 lg:text-3xl"
+			>
+				<div class="flex gap-4">
+					<div class="flex flex-wrap gap-2 text-wrap break-all">
 						<h1 class="font-semibold">
-							<span class="uppercase"> #{data.UserProfile}</span> - {data.subject}
+							<span class="uppercase">
+								<!-- svelte-ignore a11y-invalid-attribute -->
+								<a
+									class="text-blue inline-flex max-w-min items-center gap-2 rounded-full border border-blue-500 px-2 py-2 text-lg text-blue-500 hover:bg-blue-500 hover:text-white"
+									on:click={goBack}
+									href="#"
+								>
+									<Fa icon={faArrowLeft} />
+								</a>
+								#{data.UserProfile}
+							</span>
+							- {data.subject}
+							- {data.domain}
 						</h1>
-						-
-						<h1 class="font-bold lowercase">{data.domain}</h1>
 						<HelpdeskStatus status={data.status} />
 						<div
 							class="flex items-center justify-center gap-2 rounded-full bg-neutral-500 px-2 text-sm text-neutral-100"

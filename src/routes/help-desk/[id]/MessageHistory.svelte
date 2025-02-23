@@ -26,7 +26,7 @@
 	<div class="grid grid-cols-12">
 		<div class="col-span-1"></div>
 		<div class="col-span-10">
-			<div class="h-full w-full overflow-auto rounded-lg bg-gray-100 p-4">
+			<div class="h-full w-full break-all rounded-lg bg-gray-100 p-4">
 				{#each (messageHistory.description || '').split('\n') as message}
 					<p>{message}</p>
 				{/each}

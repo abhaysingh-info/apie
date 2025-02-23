@@ -13,5 +13,7 @@
 </script>
 
 <div class="flex items-center gap-2">
-	<div class="rounded-full px-2 py-1 text-sm {statusColorMap[status]}">{status}</div>
+	<div class="rounded-full px-2 py-1 text-xs lg:text-sm {statusColorMap[status]}">
+		{status}
+	</div>
 </div>
