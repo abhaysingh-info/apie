@@ -3,16 +3,7 @@
 	import { faUserTie } from '@fortawesome/free-solid-svg-icons/faUserTie';
 	import Logo from '$lib/components/logo.svelte';
 	import Fa from 'svelte-fa';
-	import {
-		faBoxesPacking,
-		faCircleInfo,
-		faEnvelope,
-		faHeadphones,
-		faHeadphonesAlt,
-		faHeadphonesSimple,
-		faHome,
-		faMagnifyingGlass
-	} from '@fortawesome/free-solid-svg-icons';
+	import { faHeadphones, faHome, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 	const links = [
 		{ title: 'Home', icon: faHome },
