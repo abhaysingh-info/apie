@@ -8,10 +8,10 @@
 	const links = [
 		{ title: 'Home', icon: faHome },
 		{ title: 'Search', icon: faMagnifyingGlass },
-		{ title: 'Help Desk', icon: faUserTie, url: '/help-desk' },
+		{ title: 'Help Desk', icon: faHeadphones, url: '/help-desk' },
 		{
 			title: 'Connectors',
-			icon: faHeadphones
+			icon: faUserTie
 		}
 	];
 
