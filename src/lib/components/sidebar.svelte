@@ -7,6 +7,9 @@
 		faBoxesPacking,
 		faCircleInfo,
 		faEnvelope,
+		faHeadphones,
+		faHeadphonesAlt,
+		faHeadphonesSimple,
 		faHome,
 		faMagnifyingGlass
 	} from '@fortawesome/free-solid-svg-icons';
@@ -17,10 +20,8 @@
 		{ title: 'Help Desk', icon: faUserTie, url: '/help-desk' },
 		{
 			title: 'Connectors',
-			icon: faBoxesPacking
-		},
-		{ title: 'Contact-Us', icon: faEnvelope },
-		{ title: 'About-Us', icon: faCircleInfo }
+			icon: faHeadphones
+		}
 	];
 
 	function closeSidebar() {

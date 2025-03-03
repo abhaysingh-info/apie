@@ -40,13 +40,13 @@
 		<div>
 			<input type="checkbox" checked={isChecked} class="form-checkbox h-5 w-5 text-blue-600" />
 		</div>
-		<div class="font-semibold">
+		<div>
 			<a href={ticketBaseURL + '/' + props.UserProfile} class="cursor-pointer"
 				>#{props.UserProfile}</a
 			>
 		</div>
 
-		<div class="hidden font-bold uppercase 2xl:inline-block">
+		<div class="hidden uppercase 2xl:inline-block">
 			- {props.domain}
 		</div>
 	</div>
@@ -55,7 +55,7 @@
 			[<span class="">{props.category || 'Uncategorized'}</span>]
 		</div>
 		-
-		<div class="break-all font-semibold">
+		<div class="break-all">
 			<span class="hidden 2xl:inline-block">
 				{props.requester_email}
 			</span>
@@ -95,7 +95,7 @@
 	<div class=" col-span-1 flex items-center justify-start md:justify-center">
 		<input type="checkbox" checked={isChecked} class="form-checkbox h-5 w-5 text-blue-600" />
 	</div>
-	<div class="col-span-9 text-wrap break-all font-bold">
+	<div class="col-span-9 text-wrap break-all">
 		<div class="flex gap-4 break-all">
 			<span>
 				<span class="hidden md:inline"> {emailUserName.slice(0, 25)} -</span>
