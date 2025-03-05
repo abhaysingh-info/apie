@@ -21,8 +21,6 @@
 </script>
 
 <section class="sidebar-root relative z-10 flex">
-	<!--	<div>-->
-	<!--		class="sidebar  border-r {$sidebarStore ? 'absolute top-0 bottom-0 bg-white w-3/4 md:w-1/2' : 'hidden lg:flex'} lg:w-16 flex flex-col justify-start">-->
 	<div
 		class="sidebar z-50 h-screen w-3/4 border-r transition-all md:w-1/2 {$sidebarStore
 			? 'absolute bottom-0 top-0 translate-x-0 bg-white md:relative'

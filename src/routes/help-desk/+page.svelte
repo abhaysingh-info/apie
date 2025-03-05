@@ -22,7 +22,7 @@
 	<div class="px-4">
 		<h1 class="text-3xl font-semibold lg:text-4xl">Tickets</h1>
 	</div>
-	<div class="flex justify-end px-16 lg:px-24">
+	<div class="flex justify-end px-4 md:px-16 lg:px-24">
 		<button
 			on:click={onArchive}
 			class="rounded-md border border-yellow-800 bg-yellow-500 px-2 py-1 text-black">Archive</button
